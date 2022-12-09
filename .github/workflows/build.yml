@@ -181,9 +181,9 @@ jobs:
 #               if: matrix.sdl2 == 'ON'
 #               run: copy "$env:SDL2_DIR/../lib/${{ matrix.s2arc }}/SDL2.dll" build/bin/${{ matrix.build }}
 
-            - name: Upload binaries
-              if: matrix.blas == 'ON' && matrix.sdl2 == 'ON'
-              uses: actions/upload-artifact@v1
-              with:
-                name: whisper-bin-${{ matrix.arch }}
-                path: build/bin/${{ matrix.build }}
+#            - name: Upload binaries
+#              if: matrix.blas == 'ON' && matrix.sdl2 == 'ON'
+#              uses: actions/upload-artifact@v1
+#              with:
+#                name: whisper-bin-${{ matrix.arch }}
+#                path: build/bin/${{ matrix.build }}
