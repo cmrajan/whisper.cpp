@@ -35,6 +35,7 @@ jobs:
               run: |
                 make
                 make stream
+                cp main build/bin/main
             - name: Upload binaries
               uses: actions/upload-artifact@v1
               with:
