@@ -38,8 +38,8 @@ jobs:
             - name: Upload binaries
               uses: actions/upload-artifact@v1
               with:
-                name: whisper-bin-${{ matrix.arch }}
-                path: build/bin/${{ matrix.build }}
+                name: main
+                path: build/bin/
 
 #     ubuntu-latest-gcc:
 #         runs-on: ubuntu-latest
